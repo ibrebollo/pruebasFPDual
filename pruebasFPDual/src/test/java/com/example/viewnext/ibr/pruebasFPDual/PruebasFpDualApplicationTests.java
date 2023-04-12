@@ -1,4 +1,4 @@
-package com.example.pruebasFPDual;
+package com.example.viewnext.ibr.pruebasFPDual;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
