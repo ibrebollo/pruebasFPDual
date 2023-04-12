@@ -1,16 +1,17 @@
 package com.example.pruebasFPDual.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+//@Controller
+@RestController
 public class HolaMundoController {
 
-	@RequestMapping("/HolaMundo")
-	@ResponseBody
+//	@RequestMapping("/HolaMundo")
+//	@ResponseBody
+	@GetMapping("/HolaMundo")
 	public String HolaMundo() {
-		return "Hola Mundo";
+		return "Hola Mundo RestController";
 		
 	}
 }
