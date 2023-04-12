@@ -12,4 +12,10 @@ public class UsuarioService {
 	public ArrayList<Usuario> listarUsuarios() {
 		return UsuarioDAOImpl.listaUsuario; // Si invocásemos al DAO con JPA recuperaría el listado de usuarios de la BBDD. 
 	}
+
+	public Usuario aniadirUsuario(Usuario u) {
+		// Por ahora sin validaciones
+		UsuarioDAOImpl.listaUsuario.add(u);
+		return u;
+	}
 }
